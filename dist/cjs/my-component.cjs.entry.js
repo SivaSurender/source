@@ -1,6 +1,6 @@
 'use strict';
 
-var index = require('./index-okwTPS5J.js');
+var index = require('./index-S5jlrhCi.js');
 var index$1 = require('./index.cjs.js');
 
 const myComponentCss = ":host{display:block}";
@@ -27,8 +27,7 @@ const MyComponent = class {
     }
     image = 'neww.jpg';
     render() {
-        const imageSrc = index.getAssetPath(`./assets/${this.image}`);
-        return (index.h("div", { key: '84378f1a544117073e528be070ed23c39c0ca48d' }, "Hello, Worcvld! I'm ", this.getText(), index.h("img", { key: 'c4d0e692fe8d1913d7425f2a15a59e41a668572d', style: { height: '20px', width: '20px' }, src: this.basePath || imageSrc, alt: "test" })));
+        return (index.h("div", { key: 'd8ac1017f32bff84699106354b377c650d7b18f5' }, "Hello, Worcvld! I'm ", this.getText(), index.h("img", { key: 'e11541f8a336ffde76672e58a1fcd87a41c1c029', style: { height: '20px', width: '20px' }, src: this.basePath, alt: "test" })));
     }
     static get assetsDirs() { return ["assets"]; }
 };

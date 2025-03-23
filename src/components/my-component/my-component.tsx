@@ -1,4 +1,4 @@
-import { Component, Prop, getAssetPath, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
 @Component({
@@ -29,11 +29,10 @@ export class MyComponent {
   }
   @Prop() image = 'neww.jpg';
   render() {
-    const imageSrc = getAssetPath(`./assets/${this.image}`);
     return (
       <div>
         Hello, Worcvld! I'm {this.getText()}
-        <img style={{ height: '20px', width: '20px' }} src={this.basePath || imageSrc} alt="test" />
+        <img style={{ height: '20px', width: '20px' }} src={this.basePath} alt="test" />
       </div>
     );
   }

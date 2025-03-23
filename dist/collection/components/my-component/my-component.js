@@ -1,4 +1,4 @@
-import { getAssetPath, h } from "@stencil/core";
+import { h } from "@stencil/core";
 import { format } from "../../utils/utils";
 export class MyComponent {
     basePath = 'https://sivasurender.github.io/source/dist/components/assets/neww.jpg';
@@ -19,8 +19,7 @@ export class MyComponent {
     }
     image = 'neww.jpg';
     render() {
-        const imageSrc = getAssetPath(`./assets/${this.image}`);
-        return (h("div", { key: '84378f1a544117073e528be070ed23c39c0ca48d' }, "Hello, Worcvld! I'm ", this.getText(), h("img", { key: 'c4d0e692fe8d1913d7425f2a15a59e41a668572d', style: { height: '20px', width: '20px' }, src: this.basePath || imageSrc, alt: "test" })));
+        return (h("div", { key: 'd8ac1017f32bff84699106354b377c650d7b18f5' }, "Hello, Worcvld! I'm ", this.getText(), h("img", { key: 'e11541f8a336ffde76672e58a1fcd87a41c1c029', style: { height: '20px', width: '20px' }, src: this.basePath, alt: "test" })));
     }
     static get is() { return "my-component"; }
     static get encapsulation() { return "shadow"; }
