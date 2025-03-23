@@ -9,6 +9,13 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
+      copy: [
+        {
+          src: '**/*.{jpg,png}',
+          dest: 'dist/components/assets',
+          warn: true,
+        },
+      ],
       customElementsExportBehavior: 'auto-define-custom-elements',
       externalRuntime: false,
     },
@@ -17,10 +24,10 @@ export const config: Config = {
     },
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      serviceWorker: null,
     },
   ],
   testing: {
-    browserHeadless: "shell",
+    browserHeadless: 'shell',
   },
 };
