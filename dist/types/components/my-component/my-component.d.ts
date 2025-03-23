@@ -1,4 +1,5 @@
 export declare class MyComponent {
+    private basePath;
     /**
      * The first name
      */

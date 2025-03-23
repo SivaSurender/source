@@ -8,6 +8,7 @@ import { format } from '../../utils/utils';
   assetsDirs: ['assets'],
 })
 export class MyComponent {
+  private basePath = 'https://sivasurender.github.io/source/dist/components/assets/neww.jpg';
   /**
    * The first name
    */
@@ -32,7 +33,7 @@ export class MyComponent {
     return (
       <div>
         Hello, Worcvld! I'm {this.getText()}
-        <img style={{ height: '20px', width: '20px' }} src={imageSrc} alt="test" />
+        <img style={{ height: '20px', width: '20px' }} src={this.basePath || imageSrc} alt="test" />
       </div>
     );
   }
