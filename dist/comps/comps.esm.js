@@ -1,0 +1,2 @@
+import{p as t,b as r}from"./p-D1fzevXQ.js";export{s as setNonce}from"./p-D1fzevXQ.js";import{g as e}from"./p-DQuL1Twl.js";var o=()=>{const s=import.meta.url;const r={};if(s!==""){r.resourcesUrl=new URL(".",s).href}return t(r)};o().then((async s=>{await e();return r([["p-35140882",[[1,"my-component",{first:[1],middle:[1],last:[1],image:[1]}]]]],s)}));
+//# sourceMappingURL=comps.esm.js.map
